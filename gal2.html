@@ -113,6 +113,7 @@
 <img id="arrow" class="fixedL" src="arrowL.png">
 <button id="arrowButtonL" class="fixedLButton"></button>
 
+<h2 id="count">test</h2>
 
  <script>
   var psGal = document.getElementById("ps"), illGal = document.getElementById("ill"), appGal = document.getElementById("app");
@@ -152,7 +153,7 @@ appGal.onclick = function() {
 backward.onclick = function() {
     iter --;
     if (iter<0){
-    iter = category.length;
+    iter = category.length-1;
     }
     show();
 };
@@ -165,6 +166,7 @@ forward.onclick = function() {
 };
 function show() {
     document.getElementById("gallery").src = category[iter];
+    document.getElementById("count").innerHTML = (iter+1) + "/" + category.length;
 }
 
  </script>
