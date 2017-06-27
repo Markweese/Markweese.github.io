@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+  #count {
+      color:rgb(101,180,107);
+      text-align:center;
+      font-family:impact;
+  }
+  #arrow {
+      width:7%;
+      height:auto;
+      z-index:-1;
+  }
+
+  #arrow:hover{
+      opacity:.35;
+  }
+  .fixedR {
+      position:fixed;
+      bottom:50%;
+      right:0px; 
+  }
+
+    .fixedRButton {
+      position:fixed;
+      bottom:0px;
+      right:0px; 
+      width:10%;
+      height:100%;
+      opacity:.00;
+  }
+
+  .fixedRButton:hover {
+      opacity:.25;
+      background-color:rgb(245,250,124);
+      border:none;
+  }
+  .fixedRButton:focus {
+      outline:none;
+      border:none;
+  }
+
+  .fixedL {
+      position:fixed;
+      bottom:50%;
+      left:0px; 
+  }
+    .fixedLButton {
+      position:fixed;
+      bottom:0px;
+      left:0px; 
+      width:10%;
+      height:100%;
+      opacity:.00;
+  }
+    .fixedLButton:hover {
+      opacity:.25;
+      background-color:rgb(245,250,124);
+      border:none;
+  }
+    .fixedLButton:focus {
+      outline:none;
+      border:none;
+  }
+      
+  body {
+      background-image:url(bgimg.jpg);
+      background-size:cover;
+      position:relative;
+      z-index:-1;
+  }
+
+  button.menu { 
+      color:gray;
+      font-family:Impact;
+      font-size:200%;
+      width:33%;
+      text-align:center;
+      background-color:white;
+      border:none;
+   }
+  button.menu:hover {
+      background-color:rgb(101,180,107);
+      opacity:.75;
+      color:white;
+     }
+
+  button.menu:focus{
+    outline:2px solid rgb(101,180,107);
+    }
+
+  img.gal {
+      display:block;
+      margin:auto;
+      margin-top:5%;
+      padding:0px;
+      width:40%;
+      box-shadow:0 6px 20px 0 rgba(97,203,7, 0.67);
+     }
+  </style>
+</head>
+<body>
+
+ <button class="menu" id="ps">Photoshop</button>
+ <button class="menu" id="ill">Illustrator</button>
+ <button class="menu" id="app">Apps/Data Vis</button>
+
+<img class="gal" id="gallery" alt="Photo Display">
+
+ <img id="arrow" class="fixedR" src="arrow.png">
+<button id="arrowButtonR" class="fixedRButton"></button>
+<img id="arrow" class="fixedL" src="arrowL.png">
+<button id="arrowButtonL" class="fixedLButton"></button>
+
+
+ <script>
+  var psGal = document.getElementById("ps"), illGal = document.getElementById("ill"), appGal = document.getElementById("app");
+
+  var forward = document.getElementById("arrowButtonR"), backward = document.getElementById("arrowButtonL");
+
+var photoShop = ["riverP.jpg", "shepP.png", "montuckyP.png", "leninP.jpg", "nozzleP.jpg", "soundShieldP.jpg", "thrustReverserP.jpg"];
+
+var illustrator = ["wagsWagonI.jpg", "theUsualI.jpg", "shepI.png", "muirI.jpg", "hootI.jpg", "hoot7I.jpg", "hoot6I.jpg", "hoot5I.jpg", "hoot4I.png", "hoot3I.jpg", "hoot2I.jpg", "hookSetI.jpg", "genI.jpg", "exploreWinterI.jpg", "exploreSummerI.jpg", "evolutionOfWinterI.jpg", "chinI.jpg", "fishCtI.jpg"];
+
+var apps = ["checkTheFlowsA.png", "importVisA.jpg", "smithA.png", "songMapA.png"];
+
+var placeHolder = ["placeHolder.png"];
+
+var category = placeHolder;
+var iter = 0;
+show();
+
+psGal.onclick = function() {
+    category = photoShop;
+    iter = 0;
+    show();
+}
+
+illGal.onclick = function() {
+    category = illustrator;
+    iter = 0;
+    show();
+}
+
+appGal.onclick = function() {
+    category = apps;
+    iter = 0;
+    show();
+}
+
+backward.onclick = function() {
+    iter --;
+    if (iter<0){
+    iter = category.length;
+    }
+    show();
+};
+forward.onclick = function() {
+    iter ++;
+    if (iter>category.length-1){
+    iter = 0;
+    }
+    show();
+};
+function show() {
+    document.getElementById("gallery").src = category[iter];
+}
+
+ </script>
+
+</body>
+</html>
