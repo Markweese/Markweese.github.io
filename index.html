@@ -26,10 +26,6 @@ img.header {
 }
     
 
-img.icon:hover {
-    opacity:.5;
-}
-
 h2 {
     color:rgb(0,78,4);
     background-color:white;
@@ -42,10 +38,32 @@ h2 {
 <hr/>
 
 <div class="bar">
- <a href="about.html"><img class="icon" src="about.jpg" alt="about page"></a>
- <a href="photoGallery.html"><img class="icon" src="gallery.jpg" alt="gallery"></a>
- <a href="contact.htm"><img class="icon" src="contact.jpg" alt="contact info"></a>
+ <a href="about.html"><img class="icon" src="aboutB.jpg" alt="about page" onmouseover="hoverAbout(this);" onmouseout="unhoverAbout(this);"></a>
+ <a href="photoGallery.html"><img class="icon" src="galleryB.jpg" alt="gallery" onmouseover="hoverGallery(this);" onmouseout="unhoverGallery(this);"></a>
+ <a href="contact.htm"><img class="icon" src="contactB.jpg" alt="contact info" onmouseover="hoverContact(this);" onmouseout="unhoverContact(this)"></a>
 </div>
+
+<script>
+function hoverAbout(element) {
+    element.setAttribute('src', 'aboutDown.jpg');
+}
+function unhoverAbout(element) {
+    element.setAttribute('src', 'aboutB.jpg');
+}
+function hoverGallery(element) {
+    element.setAttribute('src', 'galleryDown.jpg');
+}
+function unhoverGallery(element) {
+    element.setAttribute('src', 'galleryB.jpg');
+}
+function hoverContact(element) {
+    element.setAttribute('src', 'contactDown.jpg');
+}
+function unhoverContact(element) {
+    element.setAttribute('src', 'contactB.jpg');
+}
+</script>
+
 
 </body>
 </html>
