@@ -1,0 +1,157 @@
+/* line 13, ../sass/styles.scss */
+.extendRoot, h1, h2, h2.sectionTitle, p {
+  font-family: courier;
+  color: #004e04;
+  text-align: center;
+}
+
+/* line 21, ../sass/styles.scss */
+h1 {
+  margin-top: 100px;
+}
+
+/* line 26, ../sass/styles.scss */
+h2 {
+  margin-top: 2px;
+  padding: 0px;
+}
+/* line 30, ../sass/styles.scss */
+h2.sectionTitle {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  background-color: #004e04;
+  font-size: 1.5em;
+  border-radius: 25px;
+  color: white;
+  padding: 15px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+/* line 43, ../sass/styles.scss */
+h3 {
+  font-family: courier;
+  display: inline-block;
+  text-align: left;
+  color: white;
+  background-color: #004e04;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+/* line 54, ../sass/styles.scss */
+p {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  font-size: 1.5em;
+  padding: 100px;
+}
+
+/* line 62, ../sass/styles.scss */
+img.icon {
+  display: inline;
+  margin: 10px;
+  height: auto;
+  width: 30%;
+}
+/* line 68, ../sass/styles.scss */
+img.header {
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: auto;
+  margin-bottom: 30px;
+}
+/* line 72, ../sass/styles.scss */
+img.sidebarPhoto {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+/* line 80, ../sass/styles.scss */
+a {
+  text-decoration: none;
+}
+/* line 82, ../sass/styles.scss */
+a:visited {
+  text-decoration: none;
+  color: #004e04;
+}
+
+/* line 88, ../sass/styles.scss */
+hr {
+  margin-top: 0px;
+}
+
+/* line 92, ../sass/styles.scss */
+.email {
+  text-decoration: underline;
+}
+/* line 94, ../sass/styles.scss */
+.email:hover {
+  color: #AAAA22;
+}
+
+/* line 99, ../sass/styles.scss */
+.sidebar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 12%;
+  height: 20%;
+}
+
+/* line 107, ../sass/styles.scss */
+.topbar {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+/* line 111, ../sass/styles.scss */
+.gallery {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* line 115, ../sass/styles.scss */
+.gallery .dropdown {
+  display: inline-block;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+/* line 119, ../sass/styles.scss */
+.gallery .dropdown .dropdown-content {
+  display: none;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* line 128, ../sass/styles.scss */
+.gallery .dropdown .dropdown-content img {
+  width: 50%;
+  height: auto;
+}
+/* line 132, ../sass/styles.scss */
+.gallery .dropdown .dropdown-content .desc {
+  padding: 15px;
+  text-align: center;
+  font-family: courier;
+}
+/* line 139, ../sass/styles.scss */
+.gallery .dropdown:hover .dropdown-content {
+  display: block;
+  margin: auto;
+  width: 50%;
+}

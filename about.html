@@ -3,45 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <title>about page</title>
-<style>
-img {
-    width:20%;
-    height:auto;
-    display:block;
-    margin:auto;
-    padding:0px;
-}
-
-p {
-    font-family:courier;
-    color:rgb(0,78,4);
-    font-size:1.5em;
-    display:block;
-    margin:auto;
-    text-align:center;
-    padding:100px;
-}
-
-h1 {
-   font-family:courier;
-   color:rgb(0,78,4);
-   text-align:center;
-   margin-top:100px;
-}
-
-h3 {
-   font-family:courier;
-   color:rgb(0,78,4);
-   text-align:center;
-   margin-top:2px;
-   padding:0px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="stylesheets/Sass/stylesheets/styles.css">
 </head>
-<body>
-<img src="about.jpg" alt="header">
+<body>javascript/navButtons.js
+	<div class="sidebar">
+		    <a href="about.html"><img class="sidebarPhoto" src="photos/aboutB.jpg" alt="about page" onmouseover="hoverAbout(this);" onmouseout="unhoverAbout(this);"></a>
+		    <a href="gal1.html"><img class="sidebarPhoto" src="photos/galleryB.jpg" alt="gallery" onmouseover="hoverGallery(this);" onmouseout="unhoverGallery(this);"></a>
+		    <a href="contact.htm"><img class="sidebarPhoto" src="photos/contactB.jpg" alt="contact info" onmouseover="hoverContact(this);"    onmouseout="unhoverContact(this)"></a>
+		</div>
+<img src="photos/about.jpg" class="header" alt="header">
 <h1>Mark Brewer</h1>
-<h3>Cartography, Graphic Design, Web Design</h3>
-<p>I enjoy exploring design through maps, web, and graphics. Please take a look at the <a href="photoGallery.html">gallery</a> section of this site to see samples of my work.</p>
+<h2>Cartography, Graphic Design, Web Design</h2>
+<p>I enjoy exploring design through maps, web, and graphics. Please take a look at the <a href="gal1.html" class="email">gallery</a> section of this site to see samples of my work.</p>
+<script src="javascript/navButtons.js"></script>
 </body>
 </html>
