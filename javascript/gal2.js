@@ -4,7 +4,7 @@
 
 var photoShop = ["riverP.jpg", "shepP.png", "montuckyP.png", "leninP.jpg", "nozzleP.jpg", "soundShieldP.jpg", "thrustReverserP.jpg","hogJohnson.jpg"];
 
-var illustrator = ["wagsWagonI.jpg", "theUsualI.jpg", "shepI.png", "muirI.jpg", "hootI.jpg", "hoot7I.jpg", "hoot6I.jpg", "hoot5I.jpg", "hoot4I.png", "hoot3I.jpg", "hoot2I.jpg", "hookSetI.jpg", "genI.jpg", "exploreWinterI.jpg", "exploreSummerI.jpg", "evolutionOfWinterI.jpg", "chinI.jpg", "fishCtI.jpg"];
+var illustrator = ["Redington.jpg","wagsWagonI.jpg", "theUsualI.jpg", "shepI.png", "muirI.jpg", "hootI.jpg", "hoot7I.jpg", "hoot6I.jpg", "hoot5I.jpg", "hoot4I.png", "hoot3I.jpg", "hoot2I.jpg", "hookSetI.jpg", "genI.jpg", "exploreWinterI.jpg", "exploreSummerI.jpg", "evolutionOfWinterI.jpg", "chinI.jpg", "fishCtI.jpg"];
 
 var apps = ["checkTheFlowsA.png", "importVisA.jpg", "smithA.png", "songMapA.png", "bullTrout.png"];
 
