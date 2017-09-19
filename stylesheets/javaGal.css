@@ -29,7 +29,7 @@
 
   .fixedRButton:hover {
       opacity:.25;
-      background-color:black;
+      background-color:white;
       border:none;
   }
   .fixedRButton:focus {
